@@ -1,5 +1,12 @@
+@import "src/styles/breakpoints.scss";
+
 .App {
+  display: flex;
   text-align: center;
+  margin: 50px 50px 0;
+  @media (max-width: map-get($breakpoints, mobile)) {
+    margin: 20px 20px 0;
+  }
 }
 
 .App-logo {

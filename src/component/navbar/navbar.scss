@@ -1,0 +1,26 @@
+@import "src/styles/breakpoints.scss";
+
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  &-logo img {
+    @media screen and (max-width: map-get($breakpoints, mobile)) {
+      width: 145px;
+      height: auto;
+    }
+  }
+  &-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    gap: 54px;
+    @media screen and (max-width: map-get($breakpoints, mobile)) {
+      justify-content: flex-end;
+      gap: 26px;
+    }
+  }
+}
