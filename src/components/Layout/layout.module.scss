@@ -1,0 +1,55 @@
+@import "src/assets/styles/breakpoints.module.scss";
+
+.component {
+  display: flex;
+  flex-direction: column;
+  margin: 50px 50px 0;
+  @media screen and (max-width: map-get($breakpoints, mobile)) {
+    margin: 20px 20px 0;
+  }
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  & img {
+    @media screen and (max-width: map-get($breakpoints, mobile)) {
+      width: 145px;
+      height: auto;
+    }
+  }
+}
+
+.ulList {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 54px;
+  list-style-type: none;
+  @media screen and (max-width: map-get($breakpoints, mobile)) {
+    gap: 26px;
+  }
+}
+.listElement {
+  text-decoration: none;
+  color: black;
+}
+
+.active {
+  text-decoration: underline;
+  color: black;
+}
+
+.container {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  @media screen and (max-width: map-get($breakpoints, mobile)) {
+    justify-content: flex-end;
+    gap: 26px;
+  }
+}
