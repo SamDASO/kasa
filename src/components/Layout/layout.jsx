@@ -1,5 +1,6 @@
 import style from "./layout.module.scss";
 import logo from "../../assets/images/logo.png";
+import logoWhite from "../../assets/images/logo-white.png";
 import { Outlet, NavLink, Link } from "react-router-dom";
 
 const Layout = () => {
@@ -35,7 +36,12 @@ const Layout = () => {
         </nav>
       </header>
       <Outlet />
-      <footer className={style.footer}></footer>
+      <footer className={style.footer}>
+        <div className={style.containerFooter}>
+          <img src={logoWhite} alt="logo kasa" />
+          <p className="whiteText">© 2020 Kasa. All rights reserved</p>
+        </div>
+      </footer>
     </div>
   );
 };
