@@ -15,10 +15,13 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  font-size: 24px;
+  font-weight: 500;
   & img {
     @media screen and (max-width: map-get($breakpoints, mobile)) {
       width: 145px;
       height: auto;
+      font-size: 12px;
     }
   }
 }
@@ -72,5 +75,10 @@
   align-items: center;
   margin: auto;
   color: $light-color;
+  font-size: 24px;
+  font-weight: 500;
   gap: 29px;
+  @media screen and (max-width: map-get($breakpoints, mobile)) {
+    font-size: 12px;
+  }
 }
