@@ -1,0 +1,45 @@
+@import "../../assets/styles/breakpoints.module.scss";
+@import "../../assets/styles/variables.module.scss";
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 50px auto;
+  padding: 50px;
+  gap: 60px;
+  background-color: $light-bg;
+  justify-content: space-between;
+  border-radius: 25px;
+  box-sizing: content-box;
+  list-style-type: none;
+  @media screen and (max-width: map-get($breakpoints, mobile)) {
+    padding: 0px;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.cards {
+  position: relative;
+  width: 340px;
+  height: 340px;
+  border-radius: 10px;
+  background-size: cover;
+  padding-top: 320px;
+  padding-left: 20px;
+  @media screen and (max-width: map-get($breakpoints, mobile)) {
+    padding: 0;
+    width: 100%;
+  }
+}
+
+.cardTitle {
+  position: absolute;
+  bottom: 20px;
+  color: $light-color;
+  font-size: 18px;
+  font-weight: 700;
+  @media screen and (max-width: map-get($breakpoints, mobile)) {
+    padding: 20px;
+  }
+}

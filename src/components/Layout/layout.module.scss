@@ -15,10 +15,13 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  font-size: 24px;
+  font-weight: 500;
   & img {
     @media screen and (max-width: map-get($breakpoints, mobile)) {
       width: 145px;
       height: auto;
+      font-size: 12px;
     }
   }
 }
@@ -56,10 +59,8 @@
 }
 
 .footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
+  width: 100vw;
+  margin-left: -50px;
   display: flex;
   height: 209px;
   background-color: $default-color;
@@ -72,5 +73,10 @@
   align-items: center;
   margin: auto;
   color: $light-color;
+  font-size: 24px;
+  font-weight: 500;
   gap: 29px;
+  @media screen and (max-width: map-get($breakpoints, mobile)) {
+    font-size: 12px;
+  }
 }

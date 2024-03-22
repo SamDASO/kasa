@@ -1,7 +1,10 @@
+import Banner from "../components/Banner/banner";
+import bannerImage from "../assets/images/IMG-src2.png";
+
 const About = () => {
   return (
     <div className="component">
-      <h1>About</h1>
+      <Banner backgroundImage={bannerImage} />
     </div>
   );
 };
