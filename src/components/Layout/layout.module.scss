@@ -59,10 +59,8 @@
 }
 
 .footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
+  width: 100vw;
+  margin-left: -50px;
   display: flex;
   height: 209px;
   background-color: $default-color;
