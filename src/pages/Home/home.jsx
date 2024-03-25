@@ -2,6 +2,7 @@ import style from "./home.module.scss";
 import bannerImage from "../../assets/images/IMG-src1.png";
 import Banner from "../../components/Banner/banner";
 import { accomodationsData } from "../../assets/data/logements";
+import Card from "../../components/Card/card";
 
 const Home = () => {
   const data = accomodationsData;
@@ -14,15 +15,12 @@ const Home = () => {
 
       <ul className={style.container}>
         {data.map((accomodation) => {
-          const cover = accomodation.cover;
           return (
-            <li
-              className={style.cards}
+            <Card
               key={accomodation.id}
-              style={{ backgroundImage: `url(${cover})` }}
-            >
-              <p className={style.cardTitle}>{accomodation.title}</p>
-            </li>
+              accomodationTitle={accomodation.title}
+              cover={accomodation.cover}
+            />
           );
         })}
       </ul>
