@@ -1,0 +1,11 @@
+@import "../../assets/styles/breakpoints.module.scss";
+@import "../../assets/styles/variables.module.scss";
+
+.container {
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (max-width: map-get($breakpoints, mobile)) {
+    height: 255px;
+  }
+}

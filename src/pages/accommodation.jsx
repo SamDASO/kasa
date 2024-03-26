@@ -2,6 +2,7 @@ import { useParams } from "react-router-dom";
 import { accommodationsData } from "../assets/data/logements";
 import Error from "./error";
 import Carousel from "../components/Carousel/carousel";
+import InfoCard from "../components/InfoCard/infoCard";
 
 const Accommodation = () => {
   //state
@@ -18,7 +19,7 @@ const Accommodation = () => {
   return (
     <div className="component">
       <Carousel />
-      <p>{id}</p>
+      <InfoCard title={accommodation.title} location={accommodation.location} />
     </div>
   );
 };
