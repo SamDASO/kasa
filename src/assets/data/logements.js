@@ -1,4 +1,4 @@
-export const accomodationsData = [
+export const accommodationsData = [
   {
     id: "c67ab8a7",
     title: "Appartement cosy",

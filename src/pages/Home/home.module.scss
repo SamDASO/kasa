@@ -18,3 +18,9 @@
     align-items: center;
   }
 }
+
+.cards {
+  min-width: 340px;
+  min-height: 340px;
+  flex-grow: 1;
+}
