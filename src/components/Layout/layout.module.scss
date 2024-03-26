@@ -17,11 +17,13 @@
   width: 100%;
   font-size: 24px;
   font-weight: 500;
+  @media screen and (max-width: map-get($breakpoints, mobile)) {
+    font-size: 12px;
+  }
   & img {
     @media screen and (max-width: map-get($breakpoints, mobile)) {
       width: 145px;
       height: auto;
-      font-size: 12px;
     }
   }
 }
