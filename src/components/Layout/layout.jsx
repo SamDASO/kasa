@@ -39,7 +39,7 @@ const Layout = () => {
       <footer className={style.footer}>
         <div className={style.containerFooter}>
           <img src={logoWhite} alt="logo kasa" />
-          <p className="whiteText">© 2020 Kasa. All rights reserved</p>
+          <p>© 2020 Kasa. All rights reserved</p>
         </div>
       </footer>
     </div>
