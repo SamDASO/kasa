@@ -2,6 +2,7 @@ import Tag from "../Tag/tag";
 import style from "./infoCard.module.scss";
 import { accommodationsData } from "../../assets/data/logements";
 import { useParams } from "react-router-dom";
+import Rating from "../Rating/rating";
 
 const InfoCard = ({ title, location }) => {
   const { id } = useParams();
@@ -22,12 +23,16 @@ const InfoCard = ({ title, location }) => {
         </ul>
       </div>
       <div className={style.hostInfo}>
-        <div className={style.name}>{hostName}</div>
-        <div
-          className={style.hostPicture}
-          style={{ backgroundImage: `url(${picture})` }}
-        ></div>
-        <div className={style.rating}></div>
+        <div className={style.host}>
+          <div className={style.name}>{hostName}</div>
+          <div
+            className={style.hostPicture}
+            style={{ backgroundImage: `url(${picture})` }}
+          ></div>
+        </div>
+        <div className={style.rating}>
+          <Rating rating={parseInt(accommodation.rating)} />
+        </div>
       </div>
     </div>
   );

@@ -36,10 +36,18 @@
   gap: 10px;
 }
 
+.host {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
 .hostInfo {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 20px;
   justify-content: center;
   align-items: center;
 }
@@ -49,6 +57,7 @@
   font-weight: 500;
   color: $primary-color;
   text-align: right;
+  width: 93px;
 }
 
 .hostPicture {
