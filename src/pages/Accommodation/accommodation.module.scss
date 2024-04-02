@@ -1,0 +1,8 @@
+@import "../../assets/styles/breakpoints.module.scss";
+@import "../../assets/styles/variables.module.scss";
+
+.component {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
