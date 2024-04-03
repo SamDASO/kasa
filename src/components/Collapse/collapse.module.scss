@@ -15,7 +15,7 @@
   background-color: $primary-color;
   width: 100%;
   height: 32px;
-  padding: 10px 20px 10px 10px;
+  padding: 20px;
   border-radius: 5px;
 }
 
@@ -25,13 +25,18 @@
   font-weight: 700;
 }
 
-.arrowUp {
+.arrow {
   margin-left: 18px;
+  transition: transform 0.5s ease;
 }
 
-/*.arrowDown {
-  transform: rotate(45deg);
-}*/
+.rotateUp {
+  transform: rotate(0deg);
+}
+
+.rotateDown {
+  transform: rotate(180deg);
+}
 
 .collapseInfo {
   display: flex;
@@ -39,4 +44,8 @@
   width: 100%;
   padding: 20px;
   text-align: left;
+}
+
+.hidden {
+  display: none;
 }
