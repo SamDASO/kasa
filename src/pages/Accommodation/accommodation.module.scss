@@ -6,3 +6,21 @@
   flex-direction: column;
   gap: 30px;
 }
+
+.containerCollapses {
+  display: flex;
+  width: 100%;
+  min-width: 520px;
+  justify-content: space-between;
+  gap: 76px;
+}
+
+.ulCollapse {
+  width: 100%;
+  list-style: none;
+}
+
+.collapseItem {
+  font-size: 18px;
+  font-weight: 400;
+}
