@@ -9,7 +9,6 @@
   min-width: 100%;
   max-width: 1240px;
   height: 415px;
-  margin: 50px 0;
   border-radius: 25px;
   overflow: hidden;
 
@@ -19,6 +18,9 @@
 }
 
 .slide {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
   width: 0%;
   height: 100%;
   background-size: cover;
@@ -36,12 +38,12 @@
 
 .number {
   text-align: center;
-  padding-bottom: 25px;
   color: $light-color;
   font-size: 18px;
   font-style: normal;
+  margin-bottom: 25px;
   @media screen and (max-width: map-get($breakpoints, mobile)) {
-    height: 255px;
+    display: none;
   }
 }
 

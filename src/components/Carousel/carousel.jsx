@@ -42,8 +42,12 @@ function Carousel({ accommodationData }) {
   //if more than one slide
   return (
     <div className={style.component}>
-      <button className={style.arrowLeft} onClick={previousSlide}>
-        <img src={arrowLeft} alt="previous slide" />
+      <button
+        className={style.arrowLeft}
+        onClick={previousSlide}
+        aria-label="previous slide"
+      >
+        <img src={arrowLeft} alt="previous slide" aria-hidden="true" />
       </button>
       {slides.map((slide, index) => (
         <div
@@ -58,8 +62,12 @@ function Carousel({ accommodationData }) {
           </p>
         </div>
       ))}
-      <button className={style.arrowRight} onClick={nextSlide}>
-        <img src={arrowRight} alt="next slide" />
+      <button
+        className={style.arrowRight}
+        onClick={nextSlide}
+        aria-label="Close"
+      >
+        <img src={arrowRight} alt="next slide" aria-hidden="true" />
       </button>
     </div>
   );

@@ -4,6 +4,11 @@
 .star {
   width: 36px;
   height: 36px;
+
+  @media screen and (max-width: map-get($breakpoints, mobile)) {
+    width: 18px;
+    height: 18px;
+  }
 }
 
 .starPath {

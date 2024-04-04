@@ -23,6 +23,9 @@
   color: $light-color;
   font-size: 18px;
   font-weight: 700;
+  @media screen and (max-width: map-get($breakpoints, mobile)) {
+    font-size: 13px;
+  }
 }
 
 .arrow {
