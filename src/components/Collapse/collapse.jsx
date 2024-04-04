@@ -4,11 +4,11 @@ import { useState } from "react";
 
 const Collapse = ({ title, children }) => {
   //state
-  const [isClose, setisClose] = useState(true);
+  const [isClose, setIsClose] = useState(true);
 
   //behavior
-  function handleDisplay() {
-    setisClose(!isClose);
+  function toggleDisplay() {
+    setIsClose(!isClose);
   }
 
   const collapseInfoClass = isClose
@@ -26,8 +26,8 @@ const Collapse = ({ title, children }) => {
         <img
           className={`${style.arrow} ${arrowRotationClass}`}
           src={arrowUp}
-          alt="menu fermé"
-          onClick={handleDisplay}
+          alt="menu"
+          onClick={toggleDisplay}
         />
       </div>
       <div className={collapseInfoClass}>{children}</div>

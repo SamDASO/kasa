@@ -32,7 +32,7 @@ function Carousel({ accommodationData }) {
     return (
       <div className={style.component}>
         <div
-          className={style.slide}
+          className={`${style.slide} ${style.currentSlide}`}
           style={{ backgroundImage: `url(${slides[0]})`, width: "100%" }}
         ></div>
       </div>
@@ -48,7 +48,9 @@ function Carousel({ accommodationData }) {
       {slides.map((slide, index) => (
         <div
           key={index}
-          className={index === currentSlide ? style.currentSlide : style.slide}
+          className={`${style.slide} ${
+            index === currentSlide ? style.currentSlide : ""
+          }`}
           style={{ backgroundImage: `url(${slide})` }}
         >
           <p className={style.number}>

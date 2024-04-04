@@ -1,0 +1,26 @@
+@import "src/assets/styles/breakpoints.module.scss";
+@import "src/assets/styles/variables.module.scss";
+
+.footer {
+  margin-top: auto;
+  margin-left: -50px;
+  margin-right: -50px;
+  display: flex;
+  height: 209px;
+  background-color: $default-color;
+}
+
+.containerFooter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  color: $light-color;
+  font-size: 24px;
+  font-weight: 500;
+  gap: 29px;
+  @media screen and (max-width: map-get($breakpoints, mobile)) {
+    font-size: 12px;
+  }
+}
