@@ -53,12 +53,26 @@
   appearance: none;
   background-color: transparent;
   border: none;
+
+  & img {
+    @media screen and (max-width: map-get($breakpoints, mobile)) {
+      width: 24px;
+    }
+  }
 }
 
 .arrowLeft {
   left: 25px;
+
+  @media screen and (max-width: map-get($breakpoints, mobile)) {
+    left: 10px;
+  }
 }
 
 .arrowRight {
   right: 25px;
+
+  @media screen and (max-width: map-get($breakpoints, mobile)) {
+    right: 10px;
+  }
 }

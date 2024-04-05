@@ -1,6 +1,10 @@
 @import "src/assets/styles/breakpoints.module.scss";
 @import "src/assets/styles/variables.module.scss";
 
+.rating {
+  display: flex;
+}
+
 .star {
   width: 36px;
   height: 36px;
