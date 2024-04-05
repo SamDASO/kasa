@@ -1,0 +1,83 @@
+@import "../../assets/styles/breakpoints.module.scss";
+@import "../../assets/styles/variables.module.scss";
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media screen and (max-width: map-get($breakpoints, mobile)) {
+    flex-direction: column;
+  }
+}
+
+.mainInfo {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.title {
+  font-size: 36px;
+  font-weight: 500;
+  color: $primary-color;
+  @media screen and (max-width: map-get($breakpoints, mobile)) {
+    font-size: 18px;
+  }
+}
+
+.location {
+  font-size: 18px;
+  font-weight: 500;
+  color: $default-color;
+
+  @media screen and (max-width: map-get($breakpoints, mobile)) {
+    font-size: 14px;
+  }
+}
+
+.tagContainer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+
+.host {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.hostInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  @media screen and (max-width: map-get($breakpoints, mobile)) {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    width: 100%;
+  }
+}
+
+.name {
+  font-size: 18px;
+  font-weight: 500;
+  color: $primary-color;
+  text-align: right;
+  width: 93px;
+
+  @media screen and (max-width: map-get($breakpoints, mobile)) {
+    font-size: 12px;
+  }
+}
+
+.hostPicture {
+  width: 64px;
+  height: 64px;
+  border-radius: 32px;
+  background-size: cover;
+}

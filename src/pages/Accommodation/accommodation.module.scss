@@ -1,0 +1,36 @@
+@import "../../assets/styles/breakpoints.module.scss";
+@import "../../assets/styles/variables.module.scss";
+
+.component {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin: 50px 0;
+  @media screen and (max-width: map-get($breakpoints, mobile)) {
+    margin-bottom: 30px;
+    gap: 13px;
+  }
+}
+
+.containerCollapses {
+  display: flex;
+  width: 100%;
+  min-width: 520px;
+  justify-content: space-between;
+  gap: 76px;
+  @media screen and (max-width: map-get($breakpoints, mobile)) {
+    flex-direction: column;
+    min-width: 335px;
+    gap: 20px;
+  }
+}
+
+.ulCollapse {
+  width: 100%;
+  list-style: none;
+}
+
+.collapseItem {
+  font-size: 18px;
+  font-weight: 400;
+}

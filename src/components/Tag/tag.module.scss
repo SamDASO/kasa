@@ -1,0 +1,32 @@
+@import "src/assets/styles/breakpoints.module.scss";
+@import "src/assets/styles/variables.module.scss";
+
+.component {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: content-box;
+  height: 25px;
+  background-color: $primary-color;
+  border-radius: 10px;
+  list-style: none;
+  margin-top: 20px;
+  @media screen and (max-width: map-get($breakpoints, mobile)) {
+    width: auto;
+    margin-top: 10px;
+  }
+}
+
+.tagText {
+  font-size: 14px;
+  color: $light-color;
+  font-weight: 700;
+  text-align: center;
+  padding: 0 15px;
+  flex: 1;
+  white-space: nowrap;
+
+  @media screen and (max-width: map-get($breakpoints, mobile)) {
+    font-size: 10px;
+  }
+}

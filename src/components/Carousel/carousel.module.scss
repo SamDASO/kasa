@@ -1,0 +1,78 @@
+@import "../../assets/styles/breakpoints.module.scss";
+@import "../../assets/styles/variables.module.scss";
+
+.component {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  min-width: 100%;
+  max-width: 1240px;
+  height: 415px;
+  border-radius: 25px;
+  overflow: hidden;
+
+  @media screen and (max-width: map-get($breakpoints, mobile)) {
+    height: 255px;
+  }
+}
+
+.slide {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 0%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+
+  &.currentSlide {
+    justify-content: center;
+    align-items: flex-end;
+    flex: 0 0 100%;
+    height: 100%;
+  }
+}
+
+.number {
+  text-align: center;
+  color: $light-color;
+  font-size: 18px;
+  font-style: normal;
+  margin-bottom: 25px;
+  @media screen and (max-width: map-get($breakpoints, mobile)) {
+    display: none;
+  }
+}
+
+.arrowLeft,
+.arrowRight {
+  position: absolute;
+  appearance: none;
+  background-color: transparent;
+  border: none;
+
+  & img {
+    @media screen and (max-width: map-get($breakpoints, mobile)) {
+      width: 24px;
+    }
+  }
+}
+
+.arrowLeft {
+  left: 25px;
+
+  @media screen and (max-width: map-get($breakpoints, mobile)) {
+    left: 10px;
+  }
+}
+
+.arrowRight {
+  right: 25px;
+
+  @media screen and (max-width: map-get($breakpoints, mobile)) {
+    right: 10px;
+  }
+}

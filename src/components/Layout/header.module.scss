@@ -1,0 +1,52 @@
+@import "src/assets/styles/breakpoints.module.scss";
+@import "src/assets/styles/variables.module.scss";
+
+.container {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  @media screen and (max-width: map-get($breakpoints, mobile)) {
+    justify-content: flex-end;
+    gap: 26px;
+  }
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  font-size: 24px;
+  font-weight: 500;
+  @media screen and (max-width: map-get($breakpoints, mobile)) {
+    font-size: 12px;
+  }
+  & img {
+    @media screen and (max-width: map-get($breakpoints, mobile)) {
+      width: 145px;
+      height: auto;
+    }
+  }
+}
+
+.ulList {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 54px;
+  list-style-type: none;
+  @media screen and (max-width: map-get($breakpoints, mobile)) {
+    gap: 26px;
+  }
+}
+.listElement {
+  text-decoration: none;
+  color: $default-color;
+}
+
+.active {
+  text-decoration: underline;
+  color: $default-color;
+}

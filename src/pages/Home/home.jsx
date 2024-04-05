@@ -1,11 +1,12 @@
 import style from "./home.module.scss";
 import bannerImage from "../../assets/images/IMG-src1.png";
 import Banner from "../../components/Banner/banner";
-import { accomodationsData } from "../../assets/data/logements";
+import { accommodationsData } from "../../assets/data/logements";
+import { Link } from "react-router-dom";
 import Card from "../../components/Card/card";
 
 const Home = () => {
-  const data = accomodationsData;
+  const data = accommodationsData;
 
   return (
     <div className="component">
@@ -14,13 +15,16 @@ const Home = () => {
       </Banner>
 
       <ul className={style.container}>
-        {data.map((accomodation) => {
+        {data.map((accommodation) => {
           return (
-            <Card
-              key={accomodation.id}
-              accomodationTitle={accomodation.title}
-              cover={accomodation.cover}
-            />
+            <li key={accommodation.id} className={style.cards}>
+              <Link to={`/accommodation/${accommodation.id}`}>
+                <Card
+                  accommodationTitle={accommodation.title}
+                  cover={accommodation.cover}
+                />
+              </Link>
+            </li>
           );
         })}
       </ul>

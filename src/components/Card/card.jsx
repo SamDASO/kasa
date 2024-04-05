@@ -1,10 +1,10 @@
 import style from "./card.module.scss";
 
-function Card({ accomodationTitle, cover }) {
+function Card({ accommodationTitle, cover }) {
   return (
-    <li className={style.cards} style={{ backgroundImage: `url(${cover})` }}>
-      <p className={style.cardTitle}>{accomodationTitle}</p>
-    </li>
+    <div className={style.card} style={{ backgroundImage: `url(${cover})` }}>
+      <p className={style.cardTitle}>{accommodationTitle}</p>
+    </div>
   );
 }
 
