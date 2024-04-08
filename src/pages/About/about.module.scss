@@ -1,0 +1,15 @@
+@import "../../assets/styles/breakpoints.module.scss";
+@import "../../assets/styles/variables.module.scss";
+
+.collapses {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 1023px;
+  margin: auto auto 30px;
+
+  @media screen and (max-width: map-get($breakpoints, mobile)) {
+    gap: 20px;
+    margin: auto auto 20px;
+  }
+}
