@@ -7,7 +7,7 @@ import Layout from "./components/Layout/layout";
 import Home from "./pages/Home/home";
 import About from "./pages/About/about";
 import Accommodation from "./pages/Accommodation/accommodation";
-import Error from "./pages/error";
+import Error from "./pages/Error/error";
 
 const router = createBrowserRouter([
   {

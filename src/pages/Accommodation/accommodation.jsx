@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom";
 import { accommodationsData } from "../../assets/data/logements";
-import Error from "../error";
+import Error from "../Error/error";
 import Carousel from "../../components/Carousel/carousel";
 import InfoCard from "../../components/InfoCard/infoCard";
 import style from "./accommodation.module.scss";
