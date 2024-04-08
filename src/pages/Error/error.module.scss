@@ -1,0 +1,48 @@
+@import "../../assets/styles/breakpoints.module.scss";
+@import "../../assets/styles/variables.module.scss";
+
+.component {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 136px;
+  width: 100%;
+  margin: 136px auto;
+
+  @media screen and (max-width: map-get($breakpoints, mobile)) {
+    margin: 113px auto;
+    gap: 113px;
+  }
+}
+
+.title {
+  color: $primary-color;
+  text-align: center;
+  font-size: 288px;
+  font-weight: 700;
+  @media screen and (max-width: map-get($breakpoints, mobile)) {
+    font-size: 96px;
+  }
+}
+
+.subtitle {
+  color: $primary-color;
+  font-size: 36px;
+  font-weight: 500;
+  text-align: center;
+  @media screen and (max-width: map-get($breakpoints, mobile)) {
+    font-size: 18px;
+    margin: auto;
+  }
+}
+
+.linkHome {
+  color: $default-color;
+  font-size: 18px;
+  font-weight: 500;
+  text-decoration-line: underline;
+  @media screen and (max-width: map-get($breakpoints, mobile)) {
+    font-size: 14px;
+  }
+}
