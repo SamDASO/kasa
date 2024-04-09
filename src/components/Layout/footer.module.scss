@@ -26,5 +26,8 @@
   gap: 29px;
   @media screen and (max-width: map-get($breakpoints, mobile)) {
     font-size: 12px;
+    max-width: 134px;
+    text-align: center;
+    gap: 10px;
   }
 }
