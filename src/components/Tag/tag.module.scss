@@ -13,7 +13,7 @@
   margin-top: 20px;
   @media screen and (max-width: map-get($breakpoints, mobile)) {
     width: auto;
-    margin-top: 10px;
+    margin-top: 0;
   }
 }
 

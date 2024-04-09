@@ -15,6 +15,10 @@
   display: flex;
   flex-direction: column;
   width: 100%;
+
+  @media screen and (max-width: map-get($breakpoints, mobile)) {
+    gap: 10px;
+  }
 }
 
 .title {
