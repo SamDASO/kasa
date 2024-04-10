@@ -51,14 +51,37 @@
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
-  transition: display 1s ease, padding 0.5s ease;
+  opacity: 1;
+  animation: fadeIn 0.5s;
 
   @media screen and (max-width: map-get($breakpoints, mobile)) {
     font-size: 12px;
   }
 
   &.hidden {
-    display: none;
-    max-height: 0;
+    opacity: 0;
+    animation: fadeOut 0.5s;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    transform: translateY(-10%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(-10%);
+    opacity: 0;
   }
 }

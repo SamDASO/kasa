@@ -15,7 +15,7 @@ const Collapse = ({ title, children }) => {
     ? `${style.collapseInfo} ${style.hidden}`
     : style.collapseInfo;
 
-  const arrowRotationClass = isClose ? style["rotateUp"] : style["rotateDown"];
+  const arrowRotationClass = isClose ? style.rotateUp : style.rotateDown;
 
   //render
 
@@ -30,7 +30,7 @@ const Collapse = ({ title, children }) => {
           onClick={toggleDisplay}
         />
       </div>
-      <div className={collapseInfoClass}>{children}</div>
+      {!isClose && <div className={collapseInfoClass}>{children}</div>}
     </div>
   );
 };
