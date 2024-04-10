@@ -25,7 +25,7 @@ const Accommodation = () => {
       <InfoCard title={accommodation.title} location={accommodation.location} />
       <div className={style.containerCollapses}>
         <Collapse title="Description">
-          <p>{accommodation.description}</p>
+          <p className={style.collapsedContent}>{accommodation.description}</p>
         </Collapse>
         <Collapse title="Équipements">
           <ul className={style.ulCollapse}>
