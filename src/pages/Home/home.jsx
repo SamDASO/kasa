@@ -7,10 +7,13 @@ import Card from "../../components/Card/card";
 
 const Home = () => {
   const data = accommodationsData;
+  const shadowStyle = {
+    boxShadow: "2px 2px 4px rgba(0, 0, 0, 0.2)",
+  };
 
   return (
     <div className="component">
-      <Banner backgroundImage={bannerImage}>
+      <Banner backgroundImage={bannerImage} otherStyle={shadowStyle}>
         <p>Chez vous, partout et ailleurs</p>
       </Banner>
 
