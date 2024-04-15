@@ -38,4 +38,7 @@
 .collapseItem {
   font-size: 18px;
   font-weight: 400;
+  @media screen and (max-width: map-get($breakpoints, mobile)) {
+    font-size: 12px;
+  }
 }
