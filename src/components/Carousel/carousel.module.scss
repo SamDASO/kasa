@@ -53,6 +53,7 @@
   appearance: none;
   background-color: transparent;
   border: none;
+  cursor: pointer;
 
   & img {
     @media screen and (max-width: map-get($breakpoints, mobile)) {
